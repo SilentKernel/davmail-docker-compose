@@ -1,0 +1,13 @@
+version: "2"
+services:
+  davmail:
+    image: jberrenberg/davmail
+    restart: always
+    container_name: davmail
+    ports:
+      - 1025:1025
+      - 1143:1143
+      - 1110:1110
+    volumes:
+      - ./config:/etc/davmail/
+      - ./logs:/var/log/

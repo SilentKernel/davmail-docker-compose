@@ -1,0 +1,4 @@
+/config/davmail.properties
+/config/davmail.p12
+/logs/**
+!/logs/.gitkeep
